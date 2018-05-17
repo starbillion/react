@@ -1,0 +1,60 @@
+
+.audio-build {
+  .audio-body-build {
+    .flex-row {
+      cursor: pointer;
+
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin: auto 5px;
+      }
+
+      .card-block {
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+.build-tours {
+  .audio-build {
+    .audio-body-build {
+      width: 100%;
+      
+      .flex-row {
+        img {
+          width: 90px;
+          height: 90px;
+          margin: 1rem;
+        }
+
+        .card-block {
+          padding: 1.6rem;
+        }
+      }
+    }
+  }
+}
+/*
+
+    
+    .card {
+      overflow: hidden;
+      padding: 1rem 0.2rem;
+      overflow: hidden;
+      box-shadow: none;
+      border: 1px solid #ccc;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+
+      p {
+          font-size: 0.75rem;
+      }
+      
+      .card-block{
+          padding: 0.2rem;
+      }
+    }
+*/    

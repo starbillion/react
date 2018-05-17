@@ -1,0 +1,393 @@
+.view-mail {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; }
+  .view-mail .mail-head {
+    border-bottom: 1px solid #3f51b5;
+    height: 4.4em;
+    background: #fff;
+    color: #3f51b5;
+    position: fixed;
+    width: 100%;
+    z-index: 1032; }
+  .view-mail .right-elems .wrap {
+    padding: .5rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    position: relative; }
+  .view-mail .right-elems .profile {
+    padding: 0; }
+    .view-mail .right-elems .profile img {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      border: 2px solid #c8e6c9; }
+  .view-mail .right-elems .notify .badge {
+    font-size: 65%;
+    position: absolute;
+    top: -4px;
+    right: -4px; }
+  .view-mail .email-nav {
+    width: 17rem;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.05);
+    bottom: 0px;
+    position: fixed;
+    transition: .25s ease-in-out;
+    top: 4.4em;
+    background: #fff;
+    z-index: 1029;
+    transform: translate(-100%, 0);
+    overflow-y: scroll; }
+    .view-mail .email-nav.open {
+      transform: translate(0, 0); }
+  .view-mail .activity-nav {
+    width: 17rem;
+    border-left: 1px solid #e0e0e0;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    position: fixed;
+    transition: .25s ease-in-out;
+    top: 4.4em;
+    background: #fff;
+    z-index: 1029;
+    transform: translate(100%, 0);
+    right: 0px; }
+    .view-mail .activity-nav.open {
+      transform: translate(calc(100% - 17rem), 0); }
+  @media (min-width: 768px) {
+    .view-mail .email-nav {
+      transform: translate(0, 0); }
+    .view-mail .activity-nav {
+      transform: translate(calc(100% - 17rem), 0); } }
+  .view-mail .email-nav li a, .view-mail .activity-nav li a {
+    display: block;
+    font-size: 13px;
+    color: #212121;
+    padding: .8rem;
+    margin-bottom: .4rem;
+    text-transform: uppercase; }
+    .view-mail .email-nav li a:hover, .view-mail .activity-nav li a:hover {
+      background: #3f51b5;
+      color: #fff; }
+    .view-mail .email-nav li a > span.text, .view-mail .activity-nav li a > span.text {
+      margin-left: .8rem;
+      display: inline-block;
+      transform: translate(0, 1.5px); }
+    .view-mail .email-nav li a.active, .view-mail .activity-nav li a.active {
+      background: #3f51b5;
+      color: #fff; }
+  .view-mail .labels li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 1rem; }
+    .view-mail .labels li:hover {
+      background: #3f51b5;
+      color: #fff; }
+
+.view-mail .email-content-wrapper {
+  padding: 1.5rem;
+  padding-top: 6em;
+  width: 100%;
+  transition: .25s ease-in-out; }
+  @media (min-width: 768px) {
+    .view-mail .email-content-wrapper {
+      width: calc(100% - 34em);
+      transform: translate(17rem, 0); } }
+  .view-mail .email-content-wrapper .email-lists {
+    border: 2px solid #eeeeee;
+    overflow-y: hidden;
+    white-space: nowrap; }
+  .view-mail .email-content-wrapper .email-lists li {
+    display: inline-block;
+    width: 300px;
+    padding: 1.5rem;
+    white-space: normal;
+    border-right: 1px solid #e0e0e0; }
+    .view-mail .email-content-wrapper .email-lists li:last-child {
+      border-color: transparent; }
+  .view-mail .email-content-wrapper .email-lists li a {
+    color: #212121;
+    display: block; }
+    .view-mail .email-content-wrapper .email-lists li a .summary, .view-mail .email-content-wrapper .email-lists li a .subject {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .view-mail .email-content-wrapper .email-lists li:hover {
+    background: #f5f5f5; }
+
+#devices {
+  width: 100%;
+  height: 100%;
+  padding: 2em 0 12em;
+  margin: 0; }
+  #devices .btn-group {
+    justify-content: center;
+    margin-bottom: 1em; }
+
+#device, #devicetop, #screen {
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s; }
+
+#device {
+  margin: auto;
+  background-color: #fff;
+  border: 0.126em solid #fff;
+  border-radius: 1.512em;
+  width: 20em;
+  height: 40em;
+  padding: 1.701em 0 0;
+  border: 2px solid #eee;
+  box-shadow: 0px 5px 0px #ddd; }
+
+#device.ipad {
+  margin: 1em auto 0.598em;
+  border-radius: 1.512em;
+  width: 28.98em;
+  height: 38.178em;
+  padding: 1.134em 0 0;
+  box-shadow: none; }
+
+#devicetop {
+  background-color: #aba99f;
+  width: 1.89em;
+  height: 0.315em;
+  border: 0.126em solid #ddd;
+  border-radius: 0.315em;
+  margin: 0 auto 0.756em; }
+
+#devicetop.ipad-camera {
+  width: 0.315em;
+  height: 0.315em;
+  border-radius: 0.315em;
+  margin: 0 auto 1.512em;
+  border: 0.189em solid #fff; }
+
+#screen {
+  background-color: #fff;
+  margin: 0 auto 0;
+  border: 0.189em solid #ddd;
+  border-radius: 0.189em;
+  width: 18.08em;
+  height: 34.492em;
+  overflow: hidden;
+  position: relative; }
+  #screen .header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 36px;
+    padding: 8px;
+    background: #fff; }
+    #screen .header .profile {
+      display: inline;
+      cursor: pointer;
+      float: right;
+      margin-top: 3px; }
+  #screen .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 36px;
+    z-index: 60;
+    background: #262626;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #screen .footer .tab {
+      cursor: pointer;
+      text-align: center;
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #screen .footer .tab.active-tab {
+        background: #000; }
+        #screen .footer .tab.active-tab svg {
+          color: #fff !important; }
+  #screen .home {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10; }
+    #screen .home .screen-wrapper .showinfo {
+      padding: 50px 10px 0px 10px; }
+      #screen .home .screen-wrapper .showinfo h1 {
+        color: #fff;
+        font-size: 1rem; }
+      #screen .home .screen-wrapper .showinfo h2 {
+        color: #fff;
+        font-size: 0.5rem;
+        margin-bottom: 2px; }
+      #screen .home .screen-wrapper .showinfo .read-more {
+        padding: 3px 8px;
+        display: inline-block;
+        background: #fff;
+        border-radius: 10px;
+        font-size: 0.5rem; }
+    #screen .home .screen-wrapper .body {
+      z-index: 10;
+      position: absolute;
+      top: 170px;
+      width: 100%; }
+      #screen .home .screen-wrapper .body .features {
+        display: flex; }
+        #screen .home .screen-wrapper .body .features .feature {
+          display: flex;
+          flex-direction: column;
+          margin-left: 3px;
+          width: 25%; }
+          #screen .home .screen-wrapper .body .features .feature img {
+            max-height: 50px; }
+          #screen .home .screen-wrapper .body .features .feature .title {
+            font-size: 0.6rem;
+            flex: 1;
+            margin-bottom: 1px; }
+          #screen .home .screen-wrapper .body .features .feature .price {
+            font-size: 0.6rem;
+            margin-bottom: 0; }
+    #screen .home .edit-click {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #eee;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 200; }
+      #screen .home .edit-click h2 {
+        color: #3f51b5; }
+    #screen .home:hover .edit-click {
+      display: flex; }
+  #screen .map, #screen .audio, #screen .interact {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translate(calc(100% + 1px), 0);
+    transition: all 0.5s ease;
+    z-index: 50; }
+    #screen .map.selected, #screen .audio.selected, #screen .interact.selected {
+      transform: translate(0, 0); }
+    #screen .map .scroll, #screen .audio .scroll, #screen .interact .scroll {
+      overflow-y: scroll;
+      height: 351px; }
+  #screen #device-menu, #screen #audio {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    visibility: hidden;
+    z-index: 100; }
+    #screen #device-menu .shadow, #screen #audio .shadow {
+      opacity: 0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      transition: all 0.5s ease; }
+    #screen #device-menu ul, #screen #audio ul {
+      width: 80%;
+      left: 20%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      transition: all 0.5s ease;
+      transform: translate(100%, 0); }
+    #screen #device-menu.selected, #screen #audio.selected {
+      transform: translate(0, 0);
+      visibility: visible; }
+      #screen #device-menu.selected .shadow, #screen #audio.selected .shadow {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 100; }
+      #screen #device-menu.selected ul, #screen #audio.selected ul {
+        transform: translate(0, 0);
+        z-index: 110; }
+
+#screen.ipad-screen {
+  width: 24.192em;
+  height: 32.256em; }
+
+#button {
+  margin: 0.63em auto 0;
+  background-color: #ddd;
+  width: 1.071em;
+  height: 1.071em;
+  border-radius: 50%;
+  padding: 0.567em;
+  cursor: hand; }
+
+#button:hover {
+  cursor: hand; }
+
+#button-square {
+  margin: 0 auto 0 0.063em;
+  width: 0.693em;
+  height: 0.693em;
+  border: 0.126em solid #e9eae4;
+  border-radius: 0.252em; }
+
+.audio .heading {
+  border-bottom: 1px solid #aeb9bf; }
+  .audio .heading h5 {
+    color: #3f51b5; }
+
+.audio .nav-container {
+  background: #e8e8e8;
+  width: 100%;
+  text-align: center; }
+  .audio .nav-container .nav-item {
+    width: calc(100%/2); }
+  .audio .nav-container .nav-pills .nav-link.active, .audio .nav-container .nav-pills .nav-item.show .nav-link {
+    border-radius: 0; }
+  .audio .nav-container .nav-link.active {
+    border-bottom: 3px solid #bac3f5; }
+
+.audio .audio-body {
+  position: absolute;
+  height: calc(100% - 116px);
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto; }
+  .audio .audio-body .card {
+    cursor: pointer; }
+
+.audio .card {
+  overflow: hidden;
+  padding: 1rem 0.2rem;
+  overflow: hidden;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0; }
+  .audio .card .profile-picture {
+    width: 50px;
+    height: 50px;
+    margin: 0rem 0.5rem;
+    border-radius: 150px;
+    background-size: cover;
+    background-position: 50%; }
+  .audio .card p {
+    font-size: 0.75rem; }
+  .audio .card .card-block {
+    padding: 0.2rem; }
+
+.edit-tour-modal {
+  min-width: 800px; }

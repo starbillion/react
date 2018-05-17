@@ -1,0 +1,169 @@
+.preview .exit-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 2rem 3rem;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.preview .device-wrapper {
+  background: #262626;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  padding: 5em;
+  display: flex; }
+  .preview .device-wrapper #device-0 {
+    margin: auto;
+    background-color: #fff;
+    border: 0.126em solid #fff;
+    border-radius: 1.512em;
+    width: 15em;
+    height: 30em;
+    padding: 1.701em 0 0;
+    border: 2px solid #eee;
+    box-shadow: 0px 5px 0px #ddd; }
+    .preview .device-wrapper #device-0 #screen-0 {
+      background-color: #fff;
+      margin: 0 auto 0;
+      border: 0.189em solid #ddd;
+      border-radius: 0.189em;
+      width: 13.56em;
+      height: 24.492em;
+      overflow: hidden;
+      position: relative; }
+      .preview .device-wrapper #device-0 #screen-0 .nav-link {
+        font-size: 0.7rem; }
+      .preview .device-wrapper #device-0 #screen-0 .audio .audio-body {
+        top: 26px;
+        background: transparent;
+        bottom: 0px;
+        height: calc(100% - 26px); }
+        .preview .device-wrapper #device-0 #screen-0 .audio .audio-body .preview-app-details {
+          background: #262626; }
+      .preview .device-wrapper #device-0 #screen-0 .audio .return-view {
+        height: 100%; }
+      .preview .device-wrapper #device-0 #screen-0 .home {
+        opacity: 0; }
+        .preview .device-wrapper #device-0 #screen-0 .home.selected {
+          opacity: 1; }
+        .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .showinfo {
+          padding: 50px 10px 0px 10px; }
+          .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .showinfo h1 {
+            color: #fff;
+            font-size: 1rem; }
+          .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .showinfo h2 {
+            color: #fff;
+            font-size: 0.5rem;
+            margin-bottom: 2px; }
+          .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .showinfo .read-more {
+            padding: 3px 8px;
+            display: inline-block;
+            background: #fff;
+            border-radius: 10px;
+            font-size: 0.5rem; }
+        .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .body {
+          z-index: 10;
+          position: absolute;
+          top: 120px;
+          width: 100%; }
+          .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .body .features {
+            display: flex; }
+            .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .body .features .feature {
+              display: flex;
+              flex-direction: column;
+              margin-left: 3px;
+              width: 25%; }
+              .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .body .features .feature img {
+                max-height: 50px; }
+              .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .body .features .feature .title {
+                font-size: 0.4rem;
+                flex: 1;
+                margin-bottom: 1px; }
+              .preview .device-wrapper #device-0 #screen-0 .home .screen-wrapper .body .features .feature .price {
+                font-size: 0.35rem;
+                margin-bottom: 0; }
+      .preview .device-wrapper #device-0 #screen-0 .map, .preview .device-wrapper #device-0 #screen-0 .audio, .preview .device-wrapper #device-0 #screen-0 .interact {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transform: translate(calc(100% + 1px), 0);
+        transition: all 0.5s ease;
+        z-index: 50; }
+        .preview .device-wrapper #device-0 #screen-0 .map.selected, .preview .device-wrapper #device-0 #screen-0 .audio.selected, .preview .device-wrapper #device-0 #screen-0 .interact.selected {
+          transform: translate(0, 0); }
+        .preview .device-wrapper #device-0 #screen-0 .map .scroll, .preview .device-wrapper #device-0 #screen-0 .audio .scroll, .preview .device-wrapper #device-0 #screen-0 .interact .scroll {
+          overflow-y: scroll;
+          height: 351px; }
+      .preview .device-wrapper #device-0 #screen-0 .header {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 36px;
+        padding: 8px; }
+        .preview .device-wrapper #device-0 #screen-0 .header .profile {
+          display: inline;
+          cursor: pointer;
+          float: right;
+          margin-top: 3px; }
+      .preview .device-wrapper #device-0 #screen-0 .footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 36px;
+        z-index: 60;
+        background: #262626;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .preview .device-wrapper #device-0 #screen-0 .footer .tab {
+          cursor: pointer;
+          text-align: center;
+          flex: 1;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .preview .device-wrapper #device-0 #screen-0 .footer .tab.active-tab {
+            background: #000; }
+            .preview .device-wrapper #device-0 #screen-0 .footer .tab.active-tab svg {
+              color: #fff !important; }
+      .preview .device-wrapper #device-0 #screen-0 .screen-wrapper {
+        position: absolute;
+        top: 36px;
+        bottom: 36px;
+        left: 0;
+        right: 0;
+        height: 266px;
+        overflow: hidden; }
+
+.preview #device-0, .preview #devicetop, .preview #screen-0 {
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s; }
+
+.preview #device-0.ipad {
+  margin: 1em auto 0.598em;
+  border-radius: 1.512em;
+  width: 28.98em;
+  height: 38.178em;
+  padding: 1.134em 0 0;
+  box-shadow: none; }
+
+.preview #devicetop {
+  background-color: #aba99f;
+  width: 1.89em;
+  height: 0.315em;
+  border: 0.126em solid #ddd;
+  border-radius: 0.315em;
+  margin: 0 auto 0.756em; }
+
+.preview #devicetop.ipad-camera {
+  width: 0.315em;
+  height: 0.315em;
+  border-radius: 0.315em;
+  margin: 0 auto 1.512em;
+  border: 0.189em solid #fff; }

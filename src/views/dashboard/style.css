@@ -1,0 +1,22 @@
+.view .flex-btn {
+  float: left;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: auto;
+  padding-right: 10px; }
+
+.view .view-dashboard .sales-card .card + .card .card-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #eceff1; }
+  .view .view-dashboard .sales-card .card + .card .card-block svg {
+    transform: translate(0, -2px); }
+
+.view .view-dashboard .sales-card .card + .card .card-block:last-child {
+  border: 0; }
+
+.view .view-dashboard .recharts-wrapper text {
+  font-size: 0.65rem; }

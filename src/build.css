@@ -1,0 +1,578 @@
+.builder.app-wrapper .site-build-nav {
+  /* border-right: 1px solid $md-grey-200; */
+  width: 15em;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  bottom: 0;
+  transition: 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  transform: translate(-100%, 0);
+  background: #3f51b5;
+  bottom: 0; }
+  .builder.app-wrapper .site-build-nav.mini {
+    transform: translate(0, 0); }
+  @media (min-width: 992px) {
+    .builder.app-wrapper .site-build-nav {
+      transform: translate(0, 0); }
+      .builder.app-wrapper .site-build-nav.mini {
+        transform: translate(-95%, 0); }
+        .builder.app-wrapper .site-build-nav.mini:hover {
+          transform: translate(0, 0); } }
+  .builder.app-wrapper .site-build-nav .nav-list-container {
+    height: calc(100% - 4em);
+    color: #fff; }
+  .builder.app-wrapper .site-build-nav .scrollarea .scrollbar-container {
+    opacity: 0; }
+    .builder.app-wrapper .site-build-nav .scrollarea .scrollbar-container.vertical {
+      width: 15px; }
+  .builder.app-wrapper .site-build-nav .scrollarea .scrollbar-container:hover {
+    background: transparent; }
+  .builder.app-wrapper .site-build-nav .nav-head {
+    border-bottom: 1px solid #3f51b5;
+    background: #3f51b5;
+    padding: .8rem 1rem;
+    text-align: center;
+    position: relative;
+    height: 4.4em;
+    padding: .8rem 1rem;
+    height: 4.4em;
+    vertical-align: middle;
+    align-items: center;
+    display: flex; }
+    .builder.app-wrapper .site-build-nav .nav-head img {
+      max-height: 30px; }
+  .builder.app-wrapper .site-build-nav .nav-head svg > path {
+    stroke: #3f51b5; }
+  .builder.app-wrapper .site-build-nav .nav-head .toggle-dot {
+    width: 11px;
+    height: 11px;
+    border: 2px solid #3f51b5;
+    border-radius: 50%;
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+    cursor: pointer; }
+    .builder.app-wrapper .site-build-nav .nav-head .toggle-dot.active {
+      background: #3f51b5; }
+    .builder.app-wrapper .site-build-nav .nav-head .toggle-dot:before {
+      content: '';
+      position: relative;
+      display: block;
+      width: 400%;
+      height: 400%;
+      box-sizing: border-box;
+      margin-left: -150%;
+      margin-top: -150%;
+      border-radius: 100%;
+      background-color: #3f51b5;
+      animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33); }
+  80%, 100% {
+    opacity: 0; } }
+  .builder.app-wrapper .site-build-nav .nav-head a {
+    color: #212121;
+    font-weight: 700; }
+    .builder.app-wrapper .site-build-nav .nav-head a > svg {
+      position: relative;
+      top: 1px; }
+    .builder.app-wrapper .site-build-nav .nav-head a > strong {
+      display: inline-block;
+      margin-left: .2rem;
+      letter-spacing: 2.4px;
+      text-shadow: -0.5px 0px 0 #3b3b3b, 0.5px 0px 0 #3b3b3b; }
+  .builder.app-wrapper .site-build-nav .nav-list-title {
+    padding: .4rem 1.6rem;
+    margin: 1.4rem 0;
+    font-size: 70%;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative; }
+    .builder.app-wrapper .site-build-nav .nav-list-title:before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 2px;
+      bottom: 0;
+      background: #3f51b5; }
+  .builder.app-wrapper .site-build-nav .nav-list li a {
+    cursor: pointer;
+    display: block;
+    padding: 1.1rem 1.5rem;
+    color: #fafafc;
+    font-weight: 600;
+    position: relative; }
+    .builder.app-wrapper .site-build-nav .nav-list li a > .name {
+      display: inline-block;
+      margin-left: 1.5rem;
+      text-transform: uppercase;
+      font-size: 90%;
+      transform: translate(0, 1.1px); }
+    .builder.app-wrapper .site-build-nav .nav-list li a > .icon-down {
+      float: right;
+      transform: translate(0, 0.4rem);
+      transition: .15s ease-in; }
+    .builder.app-wrapper .site-build-nav .nav-list li a:hover {
+      /* color: $site-nav-list-hover-color; */
+      color: #fff;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.1); }
+    .builder.app-wrapper .site-build-nav .nav-list li a .badge-chart.badge {
+      background: #3f51b5; }
+  .builder.app-wrapper .site-build-nav .nav-list li > a.active {
+    font-weight: 700;
+    color: #fff; }
+    .builder.app-wrapper .site-build-nav .nav-list li > a.active > .icon-down {
+      transform: translate(0, 0.4rem) rotate(90deg); }
+  .builder.app-wrapper .site-build-nav .nav-list li.selected > a {
+    font-weight: 700;
+    color: #fff; }
+    .builder.app-wrapper .site-build-nav .nav-list li.selected > a .icon-down {
+      transform: translate(0, 0.4rem) rotate(-270deg); }
+  .builder.app-wrapper .site-build-nav .nav-list li .inner-drop {
+    font-size: 90%;
+    padding-left: 2.85rem;
+    background: inherit;
+    box-shadow: inset 0 1px 1px 0px rgba(0, 0, 0, 0.05), inset 0 -1px 1px 0 rgba(0, 0, 0, 0.05); }
+  .builder.app-wrapper .site-build-nav .nav-list li .inner-drop a {
+    padding: .9rem 1.5rem; }
+  .builder.app-wrapper .site-build-nav .nav-list li .inner-drop a:hover {
+    color: #3f51b5; }
+
+.builder.app-wrapper .content-container {
+  min-height: 100vh;
+  height: 100%; }
+
+.builder.app-wrapper .build-device-screen {
+  position: absolute;
+  top: 76px;
+  padding: 1rem 0.5rem;
+  height: 100%;
+  z-index: 2001; }
+
+.builder.app-wrapper .build-page-screen-fixed {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 100%; }
+  .builder.app-wrapper .build-page-screen-fixed .build {
+    height: 100%; }
+    .builder.app-wrapper .build-page-screen-fixed .build .build-wrapper {
+      margin-left: 308px;
+      position: relative;
+      right: 0;
+      background: #fff;
+      min-height: calc(100vh - 4.75rem);
+      height: 100%; }
+    .builder.app-wrapper .build-page-screen-fixed .build.beacons .build-wrapper {
+      margin-left: 0; }
+
+.builder.app-wrapper .phone-switcharoo {
+  text-align: center;
+  margin-bottom: 5px; }
+
+.builder.app-wrapper .iphone-x .outer {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 25px;
+  width: 242px;
+  height: 490px;
+  border: solid 2px buttonface;
+  display: flex;
+  align-items: center;
+  background: black;
+  z-index: 0; }
+
+.builder.app-wrapper .iphone-x .inner {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 17px;
+  align-items: center;
+  z-index: -100; }
+
+.builder.app-wrapper .iphone-x .notch {
+  position: absolute;
+  background: black;
+  width: 55%;
+  height: 15px;
+  left: 23%;
+  border-radius: 0 0 10px 10px;
+  z-index: 5;
+  align-text: center; }
+
+.builder.app-wrapper .iphone-x .screen-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+  .builder.app-wrapper .iphone-x .screen-container .fullscreen-bg {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 10px;
+    border-radius: 13px;
+    overflow: hidden; }
+    .builder.app-wrapper .iphone-x .screen-container .fullscreen-bg .fullscreen-content {
+      padding: 10px 5px 5px 5px;
+      overflow: auto;
+      height: 440px;
+      background: #fff; }
+      .builder.app-wrapper .iphone-x .screen-container .fullscreen-bg .fullscreen-content .device-inner {
+        margin-top: 10px; }
+        .builder.app-wrapper .iphone-x .screen-container .fullscreen-bg .fullscreen-content .device-inner .key {
+          font-size: 18px;
+          text-align: center;
+          margin-bottom: 5px; }
+
+@media (min-aspect-ratio: 16 / 9) {
+  .builder.app-wrapper .iphone-x .fullscreen-bg {
+    position: relative; } }
+
+@media (max-aspect-ratio: 16 / 9) {
+  .builder.app-wrapper .iphone-x .fullscreen-bg {
+    position: relative; } }
+
+.builder.app-wrapper .iphone-x .speaker {
+  position: absolute;
+  background: #323232;
+  height: 30%;
+  width: 30%;
+  z-index: 6;
+  margin: 0 auto;
+  left: 35%;
+  border-radius: 2px; }
+
+.builder.app-wrapper .iphone-x .camera {
+  position: relative;
+  background: #323232;
+  height: 10px;
+  width: 10px;
+  z-index: 7;
+  margin: 0 auto;
+  left: 31%;
+  bottom: 3px;
+  border-radius: 50%; }
+
+.builder.app-wrapper .iphone-x .home-swipe {
+  position: absolute;
+  height: 1%;
+  width: 40%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+  top: 95.5%;
+  left: 32%;
+  border-radius: 10px; }
+
+.builder.app-wrapper .iphone-x .header {
+  position: absolute;
+  width: 100%;
+  top: 15px;
+  right: 0px;
+  left: 0px;
+  height: 36px;
+  padding: 8px;
+  background: #fff;
+  border-bottom: 1px solid #ddd; }
+  .builder.app-wrapper .iphone-x .header .search {
+    cursor: pointer;
+    margin-top: 2px;
+    position: absolute;
+    left: 0.5rem; }
+  .builder.app-wrapper .iphone-x .header .profile {
+    cursor: pointer;
+    margin-top: 2px;
+    position: absolute;
+    right: 0.5rem; }
+
+.builder.app-wrapper .iphone-x .screen {
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 32px;
+  top: 51px;
+  overflow-y: scroll;
+  background: #fff;
+  z-index: 200; }
+  .builder.app-wrapper .iphone-x .screen::-webkit-scrollbar {
+    width: 0px; }
+
+.builder.app-wrapper .iphone-x .toptour {
+  width: 100%;
+  display: flex;
+  background: #55b0f7;
+  border: none;
+  color: #fff;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 2px 0; }
+  .builder.app-wrapper .iphone-x .toptour svg {
+    margin: 10px; }
+  .builder.app-wrapper .iphone-x .toptour .toptour-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+    .builder.app-wrapper .iphone-x .toptour .toptour-text .title {
+      font-weight: bold;
+      font-size: 10px; }
+    .builder.app-wrapper .iphone-x .toptour .toptour-text .price {
+      font-size: 8px; }
+
+.builder.app-wrapper .iphone-x .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 36px;
+  z-index: 60;
+  background: #262626;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*
+		    right: 5px;
+		    position: absolute;
+		    left: 5px;
+		    width: auto;
+		    bottom: 5px;
+		    border-radius: 13px;
+		    overflow: hidden;
+		    	*/ }
+  .builder.app-wrapper .iphone-x .footer .tab {
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #868686;
+    font-size: 6px;
+    font-weight: bold; }
+    .builder.app-wrapper .iphone-x .footer .tab.active-tab {
+      background: #000;
+      color: #fff !important; }
+    .builder.app-wrapper .iphone-x .footer .tab.active-tab svg {
+      color: #fff !important; }
+
+.builder.app-wrapper .pixel-two {
+  position: relative; }
+  .builder.app-wrapper .pixel-two .pixel {
+    cursor: pointer;
+    border: 3px solid #ddd;
+    background: #ededed;
+    height: 515px;
+    width: 242px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .builder.app-wrapper .pixel-two .pixel:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .builder.app-wrapper .pixel-two .pixel:before {
+      position: absolute;
+      display: block;
+      top: -25px;
+      background: #9b9b9b;
+      border-radius: 2px;
+      height: 4px;
+      width: 50px;
+      left: calc(50% - 25px); }
+    .builder.app-wrapper .pixel-two .pixel:after {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background: #9b9b9b;
+      border: 1px solid #9b9b9b;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px; }
+    .builder.app-wrapper .pixel-two .pixel > span {
+      content: '';
+      position: absolute;
+      left: calc(50% - 110px);
+      top: calc(50% - 200px);
+      background: #fff;
+      height: 400px;
+      width: 220px; }
+      .builder.app-wrapper .pixel-two .pixel > span:before {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 20px;
+        border-radius: 3px;
+        background: #9b9b9b;
+        top: -15px;
+        left: calc(50% - 10px); }
+      .builder.app-wrapper .pixel-two .pixel > span:after {
+        content: 'HELLO.';
+        color: transparent;
+        text-align: center;
+        line-height: 400px;
+        font-family: roboto;
+        font-weight: 300;
+        font-size: 25px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+        background-position: 50%;
+        background-size: 200% 200%;
+        transition: background 0.75s cubic-bezier(0.25, 0.8, 0.25, 1); }
+      .builder.app-wrapper .pixel-two .pixel > span .header {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        height: 36px;
+        padding: 8px;
+        background: #fff;
+        border-bottom: 1px solid #ddd; }
+        .builder.app-wrapper .pixel-two .pixel > span .header .search {
+          cursor: pointer;
+          margin-top: 2px;
+          position: absolute;
+          left: 0.5rem; }
+        .builder.app-wrapper .pixel-two .pixel > span .header .profile {
+          cursor: pointer;
+          margin-top: 2px;
+          position: absolute;
+          right: 0.5rem; }
+      .builder.app-wrapper .pixel-two .pixel > span .screen {
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 32px;
+        top: 36px;
+        overflow-y: scroll;
+        background: #fff;
+        z-index: 200; }
+        .builder.app-wrapper .pixel-two .pixel > span .screen::-webkit-scrollbar {
+          width: 0px; }
+      .builder.app-wrapper .pixel-two .pixel > span .toptour {
+        width: 100%;
+        display: flex;
+        background: #55b0f7;
+        border: none;
+        color: #fff;
+        flex-direction: row;
+        cursor: pointer;
+        padding: 2px 0; }
+        .builder.app-wrapper .pixel-two .pixel > span .toptour svg {
+          margin: 10px; }
+        .builder.app-wrapper .pixel-two .pixel > span .toptour .toptour-text {
+          display: flex;
+          flex-direction: column;
+          text-align: left; }
+          .builder.app-wrapper .pixel-two .pixel > span .toptour .toptour-text .title {
+            font-weight: bold;
+            font-size: 10px; }
+          .builder.app-wrapper .pixel-two .pixel > span .toptour .toptour-text .price {
+            font-size: 8px; }
+      .builder.app-wrapper .pixel-two .pixel > span .footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 36px;
+        z-index: 60;
+        background: #262626;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*
+				    right: 5px;
+				    position: absolute;
+				    left: 5px;
+				    width: auto;
+				    bottom: 5px;
+				    border-radius: 13px;
+				    overflow: hidden;
+				    	*/ }
+        .builder.app-wrapper .pixel-two .pixel > span .footer .tab {
+          font-weight: bold;
+          cursor: pointer;
+          text-align: center;
+          flex: 1;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          color: #868686;
+          font-size: 7px; }
+          .builder.app-wrapper .pixel-two .pixel > span .footer .tab.active-tab {
+            background: #000;
+            color: #fff !important; }
+          .builder.app-wrapper .pixel-two .pixel > span .footer .tab.active-tab svg {
+            color: #fff !important; }
+
+.builder.app-wrapper .home {
+  overflow: hidden; }
+  .builder.app-wrapper .home .showinfo {
+    padding: 80px 10px 0px 10px;
+    height: 150px; }
+    .builder.app-wrapper .home .showinfo h1 {
+      color: #fff;
+      font-size: 9px; }
+    .builder.app-wrapper .home .showinfo h2 {
+      color: #fff;
+      font-size: 8px; }
+    .builder.app-wrapper .home .showinfo .read-more {
+      padding: 2px 5px;
+      border-radius: 10px;
+      background: #fff;
+      color: #262626;
+      font-size: 8px; }
+    .builder.app-wrapper .home .showinfo ~ .body {
+      top: 150px; }
+  .builder.app-wrapper .home .body {
+    position: absolute;
+    top: 34%;
+    right: 0;
+    left: 0; }
+    .builder.app-wrapper .home .body .features {
+      width: 100%; }
+      .builder.app-wrapper .home .body .features .feature {
+        width: 23%;
+        float: left;
+        margin-right: 1%;
+        margin-left: 1%; }
+        .builder.app-wrapper .home .body .features .feature img {
+          width: 40px;
+          height: 40px; }
+        .builder.app-wrapper .home .body .features .feature .title {
+          font-size: 7px;
+          margin-bottom: 2px; }
+        .builder.app-wrapper .home .body .features .feature .price {
+          font-size: 6px; }
+
+.restaurant-build .restaurant-body-build {
+  background: linear-gradient(to bottom, #262626 0, #262626 78px, #ffffff 78px, #ffffff 155px, #464646 155px, #464646 232px, #ffffff 232px, #ffffff 310px);
+  margin: 0;
+  padding: 0; }
+  .restaurant-build .restaurant-body-build .flex-row {
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    height: 77px; }
+    .restaurant-build .restaurant-body-build .flex-row .card-block .card-text {
+      text-align: center;
+      font-weight: bold; }
+    .restaurant-build .restaurant-body-build .flex-row:nth-child(odd) .card-block .card-text {
+      color: #fff; }
+    .restaurant-build .restaurant-body-build .flex-row:nth-child(even) .card-block .card-text {
+      color: #000; }

@@ -1,0 +1,37 @@
+.screens .footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  height: 72px;
+  z-index: 60;
+  background: #262626;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  justify-self: center;
+  align-self: center; }
+  .screens .footer .footer-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .screens .footer .footer-div .drag-wrapper {
+      width: 100%;
+      display: flex;
+      height: 100%; }
+      .screens .footer .footer-div .drag-wrapper .drag-tab {
+        color: #fff;
+        cursor: move;
+        width: calc(100% / 5);
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+.wid-100p {
+  width: 100%; }

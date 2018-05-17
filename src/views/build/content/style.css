@@ -1,0 +1,22 @@
+.interact-tab-menu.btn-group {
+  display: flex;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #ddd; }
+  .interact-tab-menu.btn-group > button.btn {
+    padding: 1rem 0.25rem;
+    font-size: 7px;
+    flex: 1;
+    box-shadow: none;
+    border-left: 0px;
+    border-right: 0px;
+    box-sizing: content-box; }
+    .interact-tab-menu.btn-group > button.btn.active {
+      background: #fff;
+      border-bottom: 2px solid #55b0f7; }
+
+.search-tab-content {
+  background: #262626;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }

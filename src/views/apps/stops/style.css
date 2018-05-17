@@ -1,0 +1,93 @@
+.stops-wrapper {
+  background: #f9fafd;
+  border-left: 1px solid #e0e0e0;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  position: fixed;
+  transition: .25s ease-in-out;
+  top: 4.4em;
+  z-index: 1029;
+  left: 0;
+  right: 0;
+  overflow-y: scroll; }
+  .stops-wrapper .edit-stop-list {
+    padding: 1rem; }
+  .stops-wrapper .list-item-stop {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    background: #fff; }
+  .stops-wrapper .list-item-stop .content {
+    flex: 1;
+    padding: 1rem;
+    height: 110px;
+    overflow: auto; }
+  .stops-wrapper .list-item-stop .content h6 {
+    font-size: 24px; }
+  .stops-wrapper .list-item-stop .content p {
+    font-size: 12px; }
+  .stops-wrapper .list-item-stop .image {
+    height: 120px;
+    width: 120px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden; }
+  .stops-wrapper .center-device {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 2rem 0;
+    position: fixed;
+    right: 8rem; }
+    .stops-wrapper .center-device #screen .header {
+      background: #fff;
+      z-index: 100;
+      position: relative;
+      z-index: 50; }
+    .stops-wrapper .center-device #screen .home {
+      background: #262626; }
+    .stops-wrapper .center-device .purchased-body {
+      background: #eee;
+      margin: 0 10px;
+      position: relative;
+      margin-top: 100px;
+      border-radius: 4px; }
+      .stops-wrapper .center-device .purchased-body .purchased-title {
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #ddd; }
+      .stops-wrapper .center-device .purchased-body .purchased-desc {
+        padding: 0.5rem 1rem; }
+    .stops-wrapper .center-device .button-mask {
+      display: flex;
+      margin-top: 1rem; }
+      .stops-wrapper .center-device .button-mask button {
+        margin: auto; }
+        .stops-wrapper .center-device .button-mask button:nth-of-type(1) {
+          background: #eee;
+          border-color: #eee;
+          color: #262626; }
+        .stops-wrapper .center-device .button-mask button:nth-of-type(2) {
+          background: orange;
+          border-color: orange; }
+    .stops-wrapper .center-device .stop-list {
+      height: 191px;
+      margin-top: 10px;
+      color: #fff;
+      padding: 1rem 1rem 0 1rem;
+      overflow-y: scroll; }
+      .stops-wrapper .center-device .stop-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+      .stops-wrapper .center-device .stop-list li {
+        border-bottom: 1px solid #CCC; }
+      .stops-wrapper .center-device .stop-list li:last-child {
+        border-bottom: none; }
+      .stops-wrapper .center-device .stop-list .stops-list {
+        display: flex;
+        padding: .5rem 0rem; }
+      .stops-wrapper .center-device .stop-list .ml10 {
+        margin-left: 1rem; }
+      .stops-wrapper .center-device .stop-list .mrAuto {
+        margin-right: auto; }
